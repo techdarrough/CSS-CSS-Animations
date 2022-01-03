@@ -1,12 +1,14 @@
 /****************************************
 * Transform
 ****************************************/
+
 .transform-demo > div {
   height: 40px;
   background: salmon;
   width: 20%;
   margin: auto;
   display: inline-block;
+  transform: translate(150px);
 }
 
 /****************************************
@@ -18,12 +20,16 @@
   width: 200px;
   height: 200px;
   filter: grayscale(100%);
+  transition: 2s;
+
 
 }
 
 .transition-demo img:hover {
-
+  filter: none;
+  transform: scale(1.2) rotate(360deg);
 }
+
 
 /****************************************
 * Animation
@@ -35,6 +41,10 @@
   width: 500px;
   margin: auto;
   background-color: palegreen;
+  animation-name: sales-bar;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
 
 }
 
